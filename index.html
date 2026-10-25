@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>استراتژی توسعه دیجیتال کاسپین تجارت پوریا</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--green:#202824;--cream:#E5E0D5;--earth:#947B59;--white:#FAF9F6;--ink:#30332F;--line:rgba(32,40,36,.18);--font:'Vazirmatn',Tahoma,'Segoe UI',sans-serif;
+--bean:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46' height='30'%3E%3Cg fill='none' stroke='%23947B59' stroke-opacity='.28' stroke-width='1'%3E%3Cellipse cx='12' cy='15' rx='9' ry='6' transform='rotate(-20 12 15)'/%3E%3Cpath d='M4 17q8-4 16-4' /%3E%3Cellipse cx='35' cy='8' rx='8' ry='5.5' transform='rotate(25 35 8)'/%3E%3C/g%3E%3C/svg%3E")}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--white);color:var(--ink);line-height:1.9;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--earth);outline-offset:3px}
+nav{position:sticky;top:0;z-index:20;background:rgba(250,249,246,.96);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:.6rem clamp(1rem,4vw,3rem)}
+nav b{font-weight:800;color:var(--green)}
+nav button{font:inherit;background:none;border:1px solid var(--green);color:var(--green);padding:.2rem .9rem;cursor:pointer}
+#bar{position:absolute;bottom:-1px;right:0;height:2px;width:0;background:var(--earth)}
+#toc{position:fixed;top:3.2rem;right:0;width:min(300px,86vw);background:var(--green);color:var(--cream);padding:1.2rem 1.4rem;z-index:19;transform:translateX(110%);transition:transform .3s}
+#toc.open{transform:none}
+#toc a{display:block;text-decoration:none;padding:.15rem 0;font-size:.95rem;opacity:.7}
+#toc a.on{opacity:1;color:#d3b88c}
+section{padding:clamp(3.5rem,8vw,7rem) clamp(1.2rem,6vw,6rem);border-bottom:1px solid var(--line);position:relative}
+section.dark{background:var(--green);color:var(--cream)}
+section.sand{background:var(--cream)}
+.wrap{max-width:1050px;margin:auto}
+.n{position:absolute;top:1.5rem;left:clamp(1rem,4vw,3rem);font-size:clamp(4rem,12vw,9rem);font-weight:800;line-height:1;color:var(--earth);opacity:.16}
+h1{font-size:clamp(2rem,6vw,4.4rem);font-weight:800;line-height:1.3;max-width:15ch}
+h2{font-size:clamp(1.6rem,4vw,2.7rem);font-weight:800;line-height:1.4;margin-bottom:1rem;max-width:22ch}
+h3{font-size:1.1rem;font-weight:600;margin-bottom:.3rem}
+p.lead{max-width:62ch;opacity:.88;margin-bottom:2rem}
+.note{font-size:.85rem;color:var(--earth);border-inline-start:2px solid var(--earth);padding-inline-start:.7rem;margin-top:1.5rem;max-width:62ch}
+.dark .note{color:#d3b88c}
+.hero{min-height:92vh;background:var(--green) var(--bean);color:var(--cream);display:flex;align-items:flex-end}
+.hero .sub{max-width:44ch;margin:1.2rem 0;opacity:.85}
+.hero small{display:block;letter-spacing:.06em;color:#d3b88c;direction:ltr;text-align:right}
+.btn{display:inline-block;margin-top:1.8rem;background:var(--cream);color:var(--green);padding:.7rem 1.8rem;text-decoration:none;font-weight:600}
+.grid{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+.g4{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.cell{background:var(--white);padding:1.5rem}
+.sand .cell{background:var(--cream)}
+.dark .grid,.dark .cell{border-color:rgba(229,224,213,.2)}
+.dark .grid{background:rgba(229,224,213,.2)}.dark .cell{background:var(--green)}
+.cell p{font-size:.93rem;opacity:.85}
+.ico{width:34px;height:34px;stroke:var(--earth);fill:none;stroke-width:1.3;margin-bottom:.8rem}
+svg text{font-family:var(--font)}
+.swatches{display:flex;margin:1.5rem 0;height:70px}
+.swatches span{flex:1;font-size:.7rem;direction:ltr;padding:.4rem}
+.mock{border:1px solid var(--line);background:var(--white);max-width:760px;margin-top:2rem}
+.mock .top{height:26px;background:var(--cream);display:flex;gap:6px;align-items:center;padding:0 10px}
+.mock .top i{width:8px;height:8px;border-radius:50%;background:var(--earth);opacity:.6}
+.mh{background:var(--green) var(--bean);color:var(--cream);padding:2.5rem 1.5rem}
+.mh b{font-size:1.5rem;display:block;max-width:16ch;line-height:1.5}
+.mh span{display:inline-block;margin-top:1rem;background:var(--cream);color:var(--green);padding:.2rem 1rem;font-size:.85rem}
+.mrow{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line)}
+.mrow div{background:var(--white);padding:1rem;font-size:.85rem}
+.ig{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;max-width:480px;margin-top:2rem}
+.ig div{aspect-ratio:1;padding:.8rem;font-size:.8rem;line-height:1.6;display:flex;align-items:flex-end;font-weight:600;background-size:auto}
+.p1{background:var(--green) var(--bean);color:var(--cream)}.p2{background:var(--cream);color:var(--green)}.p3{background:var(--earth);color:var(--white)}
+.p4{background:var(--white);color:var(--green);border:1px solid var(--line)}.p5{background:var(--ink);color:var(--cream)}.p6{background:var(--cream) var(--bean);color:var(--green)}
+.li{border:1px solid var(--line);max-width:520px;margin-top:2rem;background:var(--white);padding:1.2rem}
+.li .h{display:flex;gap:.7rem;align-items:center;font-size:.85rem;margin-bottom:.8rem}
+.li .h i{width:38px;height:38px;background:var(--green);display:block}
+.li .card{background:var(--green) var(--bean);color:var(--cream);padding:1.5rem;margin:.8rem 0;font-weight:600}
+.bar{display:flex;align-items:center;gap:.8rem;margin:.5rem 0;font-size:.92rem}
+.bar i{display:block;height:10px;background:var(--earth)}
+.steps{display:flex;flex-wrap:wrap;gap:0;margin:2rem 0}
+.steps div{flex:1;min-width:140px;border:1px solid var(--line);padding:1rem;margin-inline-end:-1px;font-size:.9rem}
+.steps b{display:block;color:var(--earth);font-size:.8rem;direction:ltr;text-align:right}
+.tl{border-inline-start:2px solid var(--earth);padding-inline-start:1.5rem;margin-top:1.5rem}
+.tl div{margin-bottom:1.6rem;position:relative}
+.tl div:before{content:"";position:absolute;right:calc(-1.5rem - 7px);top:.6rem;width:12px;height:12px;background:var(--green);border:2px solid var(--earth);border-radius:50%}
+.tl b{direction:ltr;display:block;text-align:right;color:var(--earth)}
+.kpi{font-size:.8rem;color:var(--earth);margin-top:.8rem}
+.lines li{list-style:none;padding:.35rem 0;border-bottom:1px solid var(--line);font-size:.95rem}
+details{border-top:1px solid var(--line);padding:.8rem 0}summary{cursor:pointer;font-weight:600}.tb{width:100%;border-collapse:collapse;font-size:.88rem;margin:.8rem 0}.tb td,.tb th{border:1px solid var(--line);padding:.5rem .6rem;text-align:right;vertical-align:top}.tb th{color:var(--earth);font-weight:600}.dark details,.dark .tb td,.dark .tb th{border-color:rgba(229,224,213,.25)}
+footer{padding:2rem;text-align:center;font-size:.85rem;background:var(--green);color:var(--cream)}
+.rv{opacity:0;transform:translateY(14px);transition:.7s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}.rv{opacity:1;transform:none}}
+@media print{nav,#toc{display:none}section{page-break-inside:avoid;padding:1.5rem}.rv{opacity:1;transform:none}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}.hero{min-height:auto}}
+</style>
+</head>
+<body>
+<nav><b>کاسپین تجارت پوریا</b><button id="tb" aria-expanded="false" aria-controls="toc">فهرست</button><div id="bar"></div></nav>
+<div id="toc" aria-label="فهرست مطالب"></div>
+
+<section class="hero" id="s1" data-t="کاور">
+<div class="wrap"><small>Digital Branding · B2B Marketing · Web &amp; SEO · Social Media</small>
+<h1>استراتژی توسعه دیجیتال کاسپین تجارت پوریا</h1>
+<p class="sub">طراحی یک اکوسیستم دیجیتال یکپارچه برای برندینگ، توسعه بازار و جذب مشتریان تجاری در صنعت قهوه</p>
+<a class="btn" href="#s2">مشاهده استراتژی</a></div></section>
+
+<section id="s2" data-t="شناخت کسب‌وکار"><span class="n">۰۱</span><div class="wrap rv">
+<h2>از حضور دیجیتال تا توسعه بازار</h2>
+<p class="lead">هدف فقط طراحی سایت یا انتشار محتوا نیست. هدف، ارتباط منسجم بین برند، اطلاعات محصول، جذب مخاطب تجاری و فرایند فروش است. مخاطبان: رُستری‌ها، عمده‌فروشان، تولیدکنندگان صنعتی و خریداران سازمانی.</p>
+<div class="grid g4">
+<div class="cell"><svg class="ico" viewBox="0 0 34 34"><path d="M4 28V12l13-8 13 8v16M12 28V18h10v10"/></svg><h3>هویت برند و اعتبار تجاری</h3><p>چهره‌ای حرفه‌ای و قابل اتکا در بازار B2B.</p></div>
+<div class="cell"><svg class="ico" viewBox="0 0 34 34"><rect x="4" y="6" width="26" height="18"/><path d="M12 30h10M17 24v6"/></svg><h3>زیرساخت دیجیتال</h3><p>وب‌سایت، سئو و شبکه‌های اجتماعی به‌صورت یک سیستم.</p></div>
+<div class="cell"><svg class="ico" viewBox="0 0 34 34"><circle cx="17" cy="17" r="12"/><circle cx="17" cy="17" r="5"/></svg><h3>جذب مخاطبان هدف</h3><p>فقط خریداران تجاری و فعالان صنعت، نه مصرف‌کننده نهایی.</p></div>
+<div class="cell"><svg class="ico" viewBox="0 0 34 34"><path d="M4 26l8-8 6 5 12-14M24 9h6v6"/></svg><h3>فرصت‌های فروش</h3><p>ایجاد و پیگیری استعلام‌ها تا تماس تیم فروش.</p></div></div>
+<p class="note">در این پروپوزال هیچ آمار یا نتیجه قطعی نمایش داده نمی‌شود؛ همه موارد پیشنهادی‌اند.</p></div></section>
+
+<section class="sand" id="s3" data-t="استراتژی برندینگ"><span class="n">۰۲</span><div class="wrap rv">
+<h2>جایگاه پیشنهادی برند</h2>
+<p class="lead">«دسترسی تجاری به دانه سبز قهوه، با اطلاعات شفاف و ارتباط حرفه‌ای». این پیام پیشنهاد اولیه است، نه شعار نهایی. کانسپت خلاقانه پیشنهادی: From Bean to Business، از دانه تا همکاری تجاری.</p>
+<div class="grid g3">
+<div class="cell"><svg class="ico" viewBox="0 0 34 34"><path d="M3 22h20V9H3zM23 14h6l3 4v4H23"/><circle cx="9" cy="25" r="3"/><circle cx="26" cy="25" r="3"/></svg><h3>تأمین قابل اتکا</h3><p>نمایش توان تأمین بر پایه اطلاعات تأییدشده شرکت.</p></div>
+<div class="cell"><svg class="ico" viewBox="0 0 34 34"><path d="M5 5h24v24H5zM5 13h24M13 13v16"/></svg><h3>شفافیت محصول</h3><p>مشخصات فنی، گرید و بسته‌بندی، فقط با داده معتبر.</p></div>
+<div class="cell"><svg class="ico" viewBox="0 0 34 34"><circle cx="11" cy="17" r="8"/><circle cx="23" cy="17" r="8"/></svg><h3>همکاری حرفه‌ای</h3><p>پاسخ‌گویی روشن و مسیر ارتباط مشخص برای خریدار.</p></div></div>
+<h3 style="margin-top:2.5rem">هویت بصری: صنعتی، تخصصی، مدرن</h3>
+<div class="swatches"><span style="background:#202824;color:#E5E0D5">#202824</span><span style="background:#E5E0D5;border:1px solid var(--line)">#E5E0D5</span><span style="background:#947B59;color:#fff">#947B59</span><span style="background:#FAF9F6;border:1px solid var(--line)">#FAF9F6</span><span style="background:#30332F;color:#E5E0D5">#30332F</span></div>
+<p class="lead">سبز زغالی و کرم رنگ‌های اصلی‌اند و قهوه‌ای خاکی فقط برای تأکید می‌آید. تایپوگرافی درشت و ترکیب‌بندی مجله‌ای، بافت ظریف دانه سبز و عکاسی صنعتی از انبار، کیسه و کنترل کیفیت؛ بدون فنجان و فضای کافه. لحن برند: روشن، دقیق و بدون اغراق.</p></div></section>
+
+<section class="dark" id="s4" data-t="اکوسیستم دیجیتال"><span class="n">۰۳</span><div class="wrap rv">
+<h2>اکوسیستم دیجیتال: کانال‌ها جدا کار نمی‌کنند</h2>
+<p class="lead">محتوا و اطلاعات بین کانال‌ها جریان دارد و در نهایت به استعلام و پیگیری فروش می‌رسد.</p>
+<svg viewBox="0 0 900 340" width="100%" role="img" aria-label="مسیر جریان بین کانال‌ها">
+<g fill="none" stroke="#947B59" stroke-width="1.4"><path d="M800 70C650 70 650 170 520 170M800 270C650 270 650 170 520 170M450 170H330M330 170C250 170 250 70 150 70M330 170C250 170 250 270 150 270M150 70C90 70 90 270 150 270" stroke-dasharray="5 5"/></g>
+<g fill="#202824" stroke="#E5E0D5"><rect x="760" y="45" width="130" height="50"/><rect x="760" y="245" width="130" height="50"/><rect x="390" y="145" width="130" height="50"/><rect x="60" y="45" width="130" height="50" /><rect x="60" y="245" width="130" height="50"/></g>
+<g fill="#E5E0D5" font-size="15" text-anchor="middle"><text x="825" y="68">Instagram</text><text x="825" y="268">LinkedIn</text><text x="455" y="168">Website</text><text x="125" y="68">SEO &amp; Content</text><text x="125" y="268">Sales Inquiry</text></g>
+<g fill="#d3b88c" font-size="12" text-anchor="middle"><text x="825" y="85">آگاهی و تعامل</text><text x="825" y="285">اعتبار B2B</text><text x="455" y="185">اطلاعات و تبدیل</text><text x="125" y="85">کشف ارگانیک</text><text x="125" y="285">ارزیابی و پیگیری</text></g></svg></div></section>
+
+<section id="s5" data-t="استراتژی وب‌سایت"><span class="n">۰۴</span><div class="wrap rv">
+<h2>وب‌سایت؛ مرکز اصلی اکوسیستم دیجیتال</h2>
+<p class="lead">مرجع رسمی شرکت، ویترین محصولات و ابزار جذب درخواست‌های تجاری.</p>
+<ul class="lines" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));column-gap:2rem;padding:0">
+<li>صفحه اصلی و درباره شرکت</li><li>صفحه محصولات و صفحه هر محصول</li><li>راهنمای همکاری تجاری</li><li>مقالات و دانشنامه</li><li>تماس و درخواست استعلام</li><li>فرم استعلام تجاری و مسیرهای تماس روشن</li><li>مشخصات فنی، مبدأ و گرید (با داده تأییدشده)</li><li>ریسپانسیو، سئو، تحلیل رفتار و مدیریت آسان محتوا</li></ul>
+<div class="mock" aria-label="ماکاپ صفحه اصلی"><div class="top"><i></i><i></i><i></i></div>
+<div class="mh"><b>دسترسی تجاری به دانه سبز قهوه</b><span>درخواست استعلام</span></div>
+<div class="mrow"><div><b>محصولات</b><br>گرید و مبدأ</div><div><b>راهنمای خریدار</b><br>معیار انتخاب</div><div><b>دانشنامه</b><br>مقالات تخصصی</div></div></div>
+<p class="note">ماکاپ نمونه است؛ متن و مشخصات محصول باید از شرکت تأیید شود.</p><details open><summary>صفحه اصلی: پاسخ به چهار سؤال در نگاه اول</summary><p>چه محصولاتی عرضه می‌شود؟ برای چه کسب‌وکارهایی؟ چه اطلاعاتی قابل دریافت است؟ چطور درخواست ثبت کنیم؟ تیترهای نمونه (قابل ویرایش): «دانه سبز قهوه برای رُست‌کاران و خریداران عمده»، «مشخصات محصول را پیش از استعلام ببینید»، «درخواست خود را در سه مرحله ثبت کنید».</p></details><details><summary>ساختار نمونه صفحه محصول (نمونه نمایشی)</summary><ul class="lines" style="padding:0"><li>نام و تصاویر واقعی محصول: —</li><li>مبدأ، گونه، گرید: «با تأیید شرکت تکمیل می‌شود»</li><li>بسته‌بندی و شرایط عرضه: «در صورت تأیید»</li><li>کاربردها و نکات تصمیم خرید</li><li>پرسش‌های متداول همان محصول</li><li>فرم درخواست مشخصات، موجودی یا قیمت</li></ul></details><details><summary>ابزارهای کاربردی برای خریداران</summary><div style="overflow-x:auto"><table class="tb"><tr><th>ابزار</th><th>مشکلی که حل می‌کند</th><th>اثر روی کیفیت سرنخ</th></tr><tr><td>فرم هوشمند استعلام</td><td>نیاز مبهم خریدار</td><td>نوع، حجم و مشخصات از ابتدا مشخص است</td></tr><tr><td>چک‌لیست دانلودی پیش از خرید</td><td>نداشتن معیار</td><td>خریدار آگاه‌تر وارد گفت‌وگو می‌شود</td></tr><tr><td>فرم درخواست مشخصات فنی</td><td>پراکندگی درخواست‌ها</td><td>سرنخ مرتبط با محصول مشخص</td></tr><tr><td>راهنمای مقایسه محصولات</td><td>مقایسه فقط با قیمت</td><td>تصمیم براساس اطلاعات واقعی</td></tr><tr><td>پرسش‌های پرتکرار همکاری</td><td>سؤال تکراری از فروش</td><td>صرفه‌جویی در زمان تیم فروش</td></tr><tr><td>راهنمای شروع همکاری</td><td>سردرگمی خریدار جدید</td><td>مسیر روشن تا استعلام</td></tr></table></div></details><details><summary>خوشه‌های محتوایی و ۱۰ مقاله پیشنهادی</summary><p>سه خوشه: تجاری و جذب خریدار، آموزش فنی و محصول، بازار و زنجیره تأمین. هر مقاله یک پاسخ کوتاه، مثال و چک‌لیست دارد.</p><div style="overflow-x:auto"><table class="tb"><tr><th>عنوان</th><th>قصد جست‌وجو</th><th>لینک به</th><th>اقدام</th></tr><tr><td>خرید عمده دانه سبز قهوه؛ از کجا شروع کنیم؟</td><td>تجاری</td><td>صفحه محصولات</td><td>ثبت استعلام</td></tr><tr><td>راهنمای انتخاب تأمین‌کننده</td><td>تجاری</td><td>راهنمای همکاری</td><td>دانلود چک‌لیست</td></tr><tr><td>اطلاعات لازم برای استعلام قیمت</td><td>تجاری</td><td>فرم استعلام</td><td>ثبت درخواست</td></tr><tr><td>معیارهای مقایسه پیشنهادهای تجاری</td><td>تجاری</td><td>راهنمای مقایسه</td><td>دریافت مشخصات</td></tr><tr><td>عربیکا و روبوستا از منظر خرید تجاری</td><td>اطلاعاتی</td><td>صفحه محصول مرتبط</td><td>مشاهده مشخصات</td></tr><tr><td>آشنایی با گرید دانه سبز</td><td>اطلاعاتی</td><td>دانشنامه</td><td>مشخصات محصول</td></tr><tr><td>رطوبت، عیوب و یکنواختی دانه</td><td>اطلاعاتی</td><td>راهنمای مشخصات</td><td>چک‌لیست</td></tr><tr><td>راهنمای خواندن مشخصات فنی</td><td>اطلاعاتی</td><td>صفحه محصول</td><td>درخواست مشخصات</td></tr><tr><td>عوامل اثرگذار بر قیمت دانه سبز</td><td>بازار</td><td>مقاله خرید عمده</td><td>استعلام</td></tr><tr><td>اصطلاحات مهم خرید عمده قهوه</td><td>بازار</td><td>دانشنامه</td><td>راهنمای همکاری</td></tr></table></div><p class="note">اولویت نهایی با تحقیق حجم جست‌وجو، رقابت و نیاز بازار فارسی تعیین می‌شود.</p></details></div></section>
+
+<section class="sand" id="s6" data-t="استراتژی اینستاگرام"><span class="n">۰۵</span><div class="wrap rv">
+<h2>ویترین زنده برند و رسانه تخصصی صنعت</h2>
+<p class="lead">آگاهی مرتبط، نمایش تخصص، معرفی محصول واقعی و هدایت مخاطب تجاری به مسیر ارتباط با فروش.</p>
+<div style="max-width:560px">
+<div class="bar"><span style="width:150px">محصول و توان تأمین</span><i style="width:30%"></i>۳۰٪</div>
+<div class="bar"><span style="width:150px">آموزش تخصصی</span><i style="width:25%"></i>۲۵٪</div>
+<div class="bar"><span style="width:150px">بازار و زنجیره تأمین</span><i style="width:15%"></i>۱۵٪</div>
+<div class="bar"><span style="width:150px">اعتمادسازی و معرفی</span><i style="width:15%"></i>۱۵٪</div>
+<div class="bar"><span style="width:150px">تبدیل به سرنخ فروش</span><i style="width:15%"></i>۱۵٪</div></div>
+<p class="note">این ترکیب آزمایشی است و باید با داده عملکرد و اولویت‌های شرکت اصلاح شود.</p>
+<p class="lead" style="margin-top:1.5rem">سری‌ها: دانه‌شناسی، بررسی محصول، پشت زنجیره تأمین، راهنمای خریدار، نبض بازار. فرمت‌ها: ریلز کوتاه، کاروسل آموزشی، ویدئو و تصویر واقعی محصول، استوری پرسش‌وپاسخ. هایلایت‌ها: About · Products · Origins · Specifications · Cooperation · Contact</p>
+<div class="ig" aria-label="موکاپ گرید اینستاگرام">
+<div class="p1">دانه‌شناسی: اندازه و یکنواختی دانه</div><div class="p2">راهنمای خریدار: پنج پرسش پیش از استعلام</div><div class="p3">پشت زنجیره تأمین</div>
+<div class="p4">بررسی محصول</div><div class="p5">نبض بازار: عوامل مؤثر بر خرید</div><div class="p6">درباره کاسپین تجارت پوریا</div></div><h3 style="margin-top:2.5rem">ایده‌های اجرایی هر ستون</h3><details open><summary>۱. معرفی محصول و توانمندی تأمین (۳۰٪)</summary><div style="overflow-x:auto"><table class="tb"><tr><th>عنوان</th><th>ایده و نحوه اجرا</th><th>فرمت</th><th>اقدام بعدی مخاطب</th></tr><tr><td>«این محموله دقیقاً چیه؟»</td><td>هر قسمت یک محصول واقعی: نمای نزدیک دانه، مشخصات و بسته‌بندی تأییدشده؛ مبدأ فقط در صورت تأیید</td><td>ریلز</td><td>دریافت مشخصات</td></tr><tr><td>«قبل از سفارش، این ۳ نکته رو بدون»</td><td>سه معیار بررسی محصول، با متن روی تصویر و نمونه واقعی</td><td>کاروسل</td><td>ذخیره و استعلام</td></tr><tr><td>«محصول مناسب کسب‌وکار من کدومه؟»</td><td>مقایسه دو محصول واقعی براساس مشخصات و کاربرد، بدون ادعای برتری</td><td>کاروسل</td><td>پیام مستقیم</td></tr><tr><td>«از دانه تا سفارش»</td><td>فقط مراحل تأییدشده: آماده‌سازی اطلاعات، بررسی موجودی، ثبت درخواست</td><td>ریلز</td><td>فرم سایت</td></tr><tr><td>«درخواست مشخصات فنی»</td><td>لینک صفحه محصول و راهنمای ارسال نیاز خریدار</td><td>استوری</td><td>دریافت مشخصات</td></tr></table></div></details><details><summary>۲. آموزش تخصصی: سری «راهنمای خریدار دانه سبز» (۲۵٪)</summary><div style="overflow-x:auto"><table class="tb"><tr><th>عنوان</th><th>ایده و نحوه اجرا</th><th>فرمت</th><th>اقدام بعدی مخاطب</th></tr><tr><td>عربیکا و روبوستا برای خریدار تجاری</td><td>تفاوت‌ها و معنای آن برای کاربرد رُستری یا صنعتی</td><td>ریلز</td><td>مقاله سایت</td></tr><tr><td>چه مشخصاتی از تأمین‌کننده بخواهیم؟</td><td>چک‌لیست مشخصات پیش از خرید عمده</td><td>کاروسل ذخیره‌کردنی</td><td>دانلود چک‌لیست</td></tr><tr><td>گرید، رطوبت، عیوب و یکنواختی</td><td>هر شاخص در یک اسلاید، با اثرش روی تصمیم خرید</td><td>کاروسل مرحله‌ای</td><td>صفحه دانشنامه</td></tr><tr><td>مقایسه دو پیشنهاد تجاری</td><td>جدول مقایسه با مشخصات یکسان</td><td>کاروسل</td><td>راهنمای مقایسه</td></tr><tr><td>سؤال‌های قبل از ثبت سفارش</td><td>پنج سؤال کلیدی از تأمین‌کننده</td><td>ریلز</td><td>فرم استعلام</td></tr><tr><td>اطلاعات تبلیغاتی یا مشخصات فنی؟</td><td>نمونه تفاوت یک معرفی تبلیغاتی با اطلاعات قابل بررسی</td><td>ریلز</td><td>مشخصات محصول</td></tr><tr><td>چرا فقط قیمت کافی نیست؟</td><td>مثال فرضی (برچسب «نمونه نمایشی»): دو قیمت با مشخصات متفاوت</td><td>ریلز</td><td>راهنمای مقایسه</td></tr><tr><td>نیاز خود را قابل استعلام کنیم</td><td>تبدیل نیاز به نوع محصول، حجم و مشخصات مدنظر</td><td>کاروسل</td><td>فرم استعلام</td></tr></table></div></details><details><summary>۳. بازار و زنجیره تأمین (۱۵٪)</summary><div style="overflow-x:auto"><table class="tb"><tr><th>عنوان</th><th>ایده و نحوه اجرا</th><th>فرمت</th><th>اقدام بعدی مخاطب</th></tr><tr><td>عوامل مؤثر بر قیمت دانه سبز</td><td>توضیح عوامل با منبع و تاریخ؛ بدون پیش‌بینی قطعی</td><td>کاروسل</td><td>مقاله سایت</td></tr><tr><td>شفافیت در زنجیره چند مرحله‌ای</td><td>چه اطلاعاتی بین مبدأ و خریدار باید روشن باشد</td><td>ریلز</td><td>راهنمای همکاری</td></tr><tr><td>مقایسه قیمت بدون مقایسه مشخصات</td><td>چرا گمراه‌کننده است؛ با مثال نمایشی</td><td>ریلز</td><td>چک‌لیست</td></tr><tr><td>کاهش ریسک تصمیم خریدار عمده</td><td>سه کار عملی پیش از سفارش</td><td>کاروسل</td><td>فرم استعلام</td></tr><tr><td>از سفارش تا تحویل</td><td>اطلاعاتی که باید در فرایند تأمین روشن باشد</td><td>کاروسل</td><td>گفت‌وگوی تجاری</td></tr></table></div></details><details><summary>۴. اعتمادسازی و معرفی شرکت (۱۵٪)</summary><div style="overflow-x:auto"><table class="tb"><tr><th>عنوان</th><th>ایده و نحوه اجرا</th><th>فرمت</th><th>اقدام بعدی مخاطب</th></tr><tr><td>معرفی تیم و نقش‌ها</td><td>هر نفر در کدام مرحله همکاری نقش دارد (در صورت امکان)</td><td>ریلز یا پست</td><td>تماس</td></tr><tr><td>محصول، بسته‌بندی و محیط کار</td><td>تصاویر و اسناد واقعی و قابل انتشار</td><td>ویدئو و تصویر</td><td>صفحه محصولات</td></tr><tr><td>پاسخ به استعلام چطور پیش می‌ره؟</td><td>مراحل ثبت، بررسی و پاسخ‌گویی</td><td>کاروسل</td><td>فرم استعلام</td></tr><tr><td>سؤالات پرتکرار خریداران</td><td>هر پرسش یک استوری یا پست</td><td>استوری</td><td>پیام مستقیم</td></tr><tr><td>بررسی کیفیت</td><td>فقط اگر فرایندش واقعاً وجود دارد</td><td>ریلز</td><td>مشخصات</td></tr><tr><td>یک فرایند کاری واقعی</td><td>بدون انتشار اطلاعات محرمانه مشتری</td><td>ریلز</td><td>درباره شرکت</td></tr><tr><td>«برای شروع همکاری چه اطلاعاتی لازمه؟»</td><td>فهرست اطلاعات اولیه</td><td>استوری</td><td>راهنمای همکاری</td></tr></table></div></details><details><summary>۵. تبدیل مخاطب به سرنخ فروش (۱۵٪)</summary><div style="overflow-x:auto"><table class="tb"><tr><th>عنوان</th><th>ایده و نحوه اجرا</th><th>فرمت</th><th>اقدام بعدی مخاطب</th></tr><tr><td>«برای مشخصات، این اطلاعات رو بفرست»</td><td>قالب پیام ثابت برای درخواست</td><td>استوری</td><td>پیام مستقیم</td></tr><tr><td>«نوع محصول و حجم نیازت رو بگو»</td><td>استیکر پرسش با گزینه‌های حجم</td><td>استوری</td><td>فرم سایت</td></tr><tr><td>پرسش‌وپاسخ خریداران عمده</td><td>جمع‌آوری سؤال و پاسخ در ریلز</td><td>استوری و ریلز</td><td>تماس</td></tr><tr><td>معرفی یک محصول با لینک مشخصات</td><td>محصول واقعی همراه لینک صفحه</td><td>استوری</td><td>صفحه محصول</td></tr><tr><td>چک‌لیست اطلاعات لازم برای قیمت</td><td>فهرست ذخیره‌کردنی</td><td>کاروسل</td><td>فرم استعلام</td></tr><tr><td>دعوت به گفت‌وگوی تجاری</td><td>CTA ثابت در انتهای محتوا</td><td>پست</td><td>ثبت درخواست</td></tr></table></div></details><p class="note">مسیر نهایی باید با امکانات واقعی تیم فروش هماهنگ شود.</p></div></section>
+
+<section id="s7" data-t="استراتژی لینکدین"><span class="n">۰۶</span><div class="wrap rv">
+<h2>لینکدین؛ زیرساخت ارتباطات حرفه‌ای B2B</h2>
+<p class="lead">توسعه اعتبار حرفه‌ای، ارتباط با فعالان صنعت و ایجاد فرصت همکاری، با محتوای مناسب مدیران خرید، رُستری‌ها و توزیع‌کنندگان.</p>
+<ul class="lines" style="padding:0;max-width:640px"><li>اخبار و فعالیت‌های واقعی شرکت و محتوای تخصصی زنجیره تأمین</li><li>تحلیل روند بازار با استناد معتبر</li><li>معرفی محصولات و ظرفیت‌های تأییدشده</li><li>بهینه‌سازی صفحه شرکت، قالب اختصاصی پست و تقویم محتوایی</li><li>هدایت مخاطب به صفحات محصول و مسیر استعلام</li></ul>
+<div class="li" aria-label="موکاپ پست لینکدین"><div class="h"><i></i><div><b>کاسپین تجارت پوریا</b><br>تأمین دانه سبز قهوه</div></div>
+<p>پنج معیار انتخاب دانه سبز برای خرید تجاری</p><div class="card">From Bean to Business</div><small>راهنمای کامل در وب‌سایت شرکت</small></div><h3 style="margin-top:2.5rem">۸ ایده پست</h3><div style="overflow-x:auto"><table class="tb"><tr><th>عنوان</th><th>زاویه</th><th>ساختار پیشنهادی</th><th>هدف</th></tr><tr><td>چه اطلاعاتی یک درخواست خرید عمده را دقیق‌تر می‌کند؟</td><td>دیدگاه تأمین‌کننده</td><td>مسئله، ۴ اطلاعات کلیدی، نمونه فرم</td><td>استعلام باکیفیت‌تر</td></tr><tr><td>شفافیت مشخصات در انتخاب تأمین‌کننده</td><td>دیدگاه تأمین‌کننده</td><td>تجربه رایج، پیامد، راهکار</td><td>اعتبار حرفه‌ای</td></tr><tr><td>چرا تعریف دقیق نیاز مذاکره را کوتاه می‌کند؟</td><td>دیدگاه تأمین‌کننده</td><td>سناریوی نمایشی، درس، چک‌لیست</td><td>گفت‌وگوی تجاری</td></tr><tr><td>ساختار استاندارد معرفی تجاری دانه سبز</td><td>شناخت محصول</td><td>الگوی جدول مشخصات قابل دانلود</td><td>ارتباط با مدیران خرید</td></tr><tr><td>مقایسه دو پیشنهاد با یک چک‌لیست</td><td>شناخت محصول</td><td>چک‌لیست، مثال، جمع‌بندی</td><td>ذخیره و اشتراک‌گذاری</td></tr><tr><td>معرفی تبلیغاتی یا اطلاعات قابل ارزیابی؟</td><td>شناخت محصول</td><td>دو نمونه کنار هم، تحلیل</td><td>اعتمادسازی</td></tr><tr><td>عوامل اثرگذار بر قیمت دانه سبز</td><td>تحلیل بازار</td><td>واقعیت، تحلیل، پیش‌بینی؛ با منبع و تاریخ</td><td>جلب خریداران صنعتی</td></tr><tr><td>تنوع منابع تأمین و مدیریت ریسک</td><td>تحلیل بازار</td><td>مفهوم، مثال عمومی، پرسش به مخاطب؛ بدون ادعای قابلیت تأییدنشده</td><td>بحث تخصصی</td></tr></table></div><p>برای «معرفی ظرفیت‌های واقعی» هم محصولات با مشخصات تأییدشده، اخبار واقعی، تیم و مراحل ثبت درخواست منتشر می‌شود؛ با رعایت محرمانگی.</p><details><summary>برنامه ارتباط با گروه‌های هدف</summary><div style="overflow-x:auto"><table class="tb"><tr><th>گروه</th><th>محتوای مفید</th><th>نوع ارتباط</th><th>مسیر</th></tr><tr><td>رُست‌کاران و تولیدکنندگان</td><td>چک‌لیست مشخصات، مقایسه محصول</td><td>پیام شخصی‌شده درباره نیاز مشخص آن‌ها</td><td>صفحه محصول</td></tr><tr><td>واردکنندگان و عمده‌فروشان</td><td>شفافیت زنجیره و فرایند سفارش</td><td>کامنت تخصصی، گفت‌وگوی مستقیم</td><td>راهنمای همکاری</td></tr><tr><td>خریداران سازمانی</td><td>الگوی معرفی محصول و استعلام</td><td>معرفی کوتاه و محترمانه</td><td>فرم استعلام</td></tr><tr><td>متخصصان خرید و بازرگانی</td><td>تحلیل بازار با منبع</td><td>تعامل در پست‌های مرتبط</td><td>گفت‌وگوی تجاری</td></tr></table></div><p class="note">پیام انبوه و غیرشخصی ممنوع؛ هر پیام به نیاز مشخص گیرنده اشاره کند.</p></details></div></section>
+
+<section class="sand" id="s8" data-t="سئو و محتوا"><span class="n">۰۷</span><div class="wrap rv">
+<h2>دیده‌شدن در لحظه نیاز مشتری</h2>
+<div class="grid g3" style="margin-top:1.5rem">
+<div class="cell"><h3>جست‌وجوهای محصول‌محور</h3><p>خرید عمده دانه سبز قهوه، تأمین دانه سبز قهوه</p></div>
+<div class="cell"><h3>جست‌وجوهای اطلاعاتی</h3><p>تفاوت عربیکا و روبوستا، گرید دانه سبز قهوه</p></div>
+<div class="cell"><h3>جست‌وجوهای تجاری</h3><p>معیارهای انتخاب تأمین‌کننده، عوامل مؤثر بر خرید عمده</p></div></div>
+<p class="note">عبارت‌ها نمونه‌اند و باید با تحقیق کلمات کلیدی اعتبارسنجی شوند.</p>
+<div class="steps"><div><b>Search</b>جست‌وجوی خریدار</div><div><b>Content</b>مقاله تخصصی</div><div><b>Product Page</b>صفحه محصول</div><div><b>Inquiry</b>استعلام</div></div>
+<p class="lead">فعالیت‌ها: تحقیق کلمه کلیدی، معماری و خوشه‌های موضوعی، مقاله تخصصی، بهینه‌سازی صفحه محصول و فنی، لینک‌سازی داخلی و پایش در ابزار تحلیلی.</p></div></section>
+
+<section id="s9" data-t="موتور محتوا"><span class="n">۰۸</span><div class="wrap rv">
+<h2>یک موضوع، یک سیستم مشترک</h2>
+<p class="lead">نمونه: «معیارهای انتخاب دانه سبز برای خرید تجاری» که در کانال‌های مختلف بازتولید می‌شود.</p>
+<svg viewBox="0 0 900 360" width="100%" role="img" aria-label="نمودار چندشاخه محتوا">
+<g fill="none" stroke="#947B59" stroke-width="1.4"><path d="M620 180C520 180 520 40 400 40M620 180C520 180 520 110 400 110M620 180H400M620 180C520 180 520 250 400 250M620 180C520 180 520 320 400 320"/><path d="M270 40C190 40 190 180 130 180M270 110C190 110 190 180 130 180M270 180H130M270 250C190 250 190 180 130 180M270 320C190 320 190 180 130 180"/></g>
+<g fill="#FAF9F6" stroke="#202824"><rect x="620" y="150" width="260" height="60" fill="#202824"/><rect x="270" y="20" width="130" height="40"/><rect x="270" y="90" width="130" height="40"/><rect x="270" y="160" width="130" height="40"/><rect x="270" y="230" width="130" height="40"/><rect x="270" y="300" width="130" height="40"/><rect x="10" y="150" width="120" height="60" fill="#947B59"/></g>
+<g font-size="13" text-anchor="middle" fill="#202824"><text x="335" y="45">ریلز آموزشی</text><text x="335" y="115">کاروسل خریدار</text><text x="335" y="185">پست لینکدین</text><text x="335" y="255">صفحه محصول</text><text x="335" y="325">مقاله سایت</text><text x="70" y="177" fill="#fff">دعوت به</text><text x="70" y="195" fill="#fff">استعلام</text><text x="750" y="185" fill="#E5E0D5" font-size="15">معیارهای انتخاب دانه سبز</text></g></svg><details open><summary>مثال کامل: «پیش از خرید عمده دانه سبز، چه مشخصاتی را بررسی کنیم؟»</summary><div style="overflow-x:auto"><table class="tb"><tr><th>کانال</th><th>قالب</th></tr><tr><td>وب‌سایت</td><td>مقاله جامع، چک‌لیست و فرم درخواست مشخصات</td></tr><tr><td>اینستاگرام</td><td>ریلز ۳ نکته و کاروسل ذخیره‌کردنی</td></tr><tr><td>لینکدین</td><td>پست درباره اهمیت اطلاعات استاندارد در تصمیم خرید B2B</td></tr><tr><td>استوری</td><td>پرسش تعاملی: مهم‌ترین معیار انتخاب محصول؟</td></tr><tr><td>اقدام</td><td>هدایت به صفحه راهنما یا فرم استعلام</td></tr></table></div></details><details><summary>سه چرخه محتوایی دیگر</summary><div style="overflow-x:auto"><table class="tb"><tr><th>موضوع</th><th>سایت</th><th>اینستاگرام</th><th>لینکدین</th></tr><tr><td>مقایسه محصولات واقعی</td><td>صفحه مقایسه با جدول مشخصات</td><td>کاروسل دو محصول</td><td>پست چک‌لیست مقایسه</td></tr><tr><td>عوامل اثرگذار بر قیمت</td><td>مقاله با منبع و تاریخ</td><td>ریلز سه عامل</td><td>تحلیل بازار با تمایز واقعیت و پیش‌بینی</td></tr><tr><td>راهنمای ثبت درخواست تجاری</td><td>صفحه شروع همکاری و فرم</td><td>استوری مراحل ثبت</td><td>پست درباره درخواست دقیق</td></tr></table></div><p>هر کانال نقش خودش را دارد: اینستاگرام شناخت، لینکدین اعتبار، سایت اطلاعات و اقدام.</p></details></div></section>
+
+<section class="sand" id="s10" data-t="مسیر تبدیل"><span class="n">۰۹</span><div class="wrap rv">
+<h2>از آشنایی با برند تا فرصت فروش</h2>
+<div class="steps"><div><b>Discovery</b>کشف برند</div><div><b>Profile Visit</b>بازدید پروفایل</div><div><b>Website</b>ورود به سایت</div><div><b>Inquiry</b>ثبت استعلام</div><div><b>Sales Follow-up</b>پیگیری فروش</div></div>
+<p class="lead">هدف فقط افزایش بازدید نیست؛ مسیری قابل اندازه‌گیری از آشنایی تا فرصت فروش لازم است.</p>
+<ul class="lines" style="padding:0;max-width:640px"><li>بازدید مرتبط از سایت و کلیک روی صفحات محصول</li><li>درخواست‌های استعلام و تعداد سرنخ‌های واجد شرایط</li><li>ارتباطات حرفه‌ای مرتبط در لینکدین</li><li>سهم کانال‌ها در فرصت فروش، در صورت امکان ردیابی</li></ul></div></section>
+
+<section class="dark" id="s11" data-t="نقشه راه"><span class="n">۱۰</span><div class="wrap rv">
+<h2>نقشه راه اجرایی</h2>
+<div class="tl">
+<div><b>Phase 01 — Discovery &amp; Strategy</b>شناخت کسب‌وکار، بررسی محصولات و مشتریان، تعیین جایگاه برند.</div>
+<div><b>Phase 02 — Digital Foundation</b>طراحی سایت، معماری محتوا، ساختار سئو و آماده‌سازی شبکه‌ها.</div>
+<div><b>Phase 03 — Content &amp; Launch</b>تولید محتوای اولیه، راه‌اندازی صفحات و انتشار منظم.</div>
+<div><b>Phase 04 — Measurement &amp; Optimization</b>تحلیل داده، بهینه‌سازی محتوا، بررسی کیفیت سرنخ‌ها.</div></div>
+<p class="note">توالی پیشنهادی است؛ مدت هر مرحله پس از بررسی امکانات و تأیید شرکت تعیین می‌شود.</p><details><summary>برنامه محتوایی چهارهفته‌ای (پیشنهاد اولیه)</summary><div style="overflow-x:auto"><table class="tb"><tr><th>هفته</th><th>موضوع</th><th>کانال</th><th>فرمت</th></tr><tr><td>۱</td><td>معیارهای انتخاب دانه سبز</td><td>سایت، اینستاگرام، لینکدین</td><td>مقاله، ریلز، پست</td></tr><tr><td>۲</td><td>«این محموله دقیقاً چیه؟» (محصول تأییدشده)</td><td>اینستاگرام، لینکدین</td><td>ریلز، پست</td></tr><tr><td>۳</td><td>عوامل اثرگذار بر قیمت (با منبع)</td><td>سایت، لینکدین، اینستاگرام</td><td>مقاله، پست، کاروسل</td></tr><tr><td>۴</td><td>راهنمای ثبت درخواست تجاری</td><td>سایت، استوری</td><td>صفحه راهنما، استوری پرسش‌وپاسخ</td></tr></table></div><p>داده‌های لازم: بازدید صفحات محصول، کلیک CTA، تکمیل فرم، سرنخ‌های واجد شرایط، کیفیت درخواست‌ها و ارتباطات تجاری شکل‌گرفته. برنامه باید با ظرفیت واقعی تیم تنظیم شود.</p></details></div></section>
+
+<section id="s12" data-t="سنجش عملکرد"><span class="n">۱۱</span><div class="wrap rv">
+<h2>سنجش عملکرد</h2>
+<div class="grid g4">
+<div class="cell"><h3>Brand Awareness</h3><p>—</p><div class="kpi">قابل اندازه‌گیری پس از راه‌اندازی</div></div>
+<div class="cell"><h3>Content Performance</h3><p>—</p><div class="kpi">قابل اندازه‌گیری پس از راه‌اندازی</div></div>
+<div class="cell"><h3>Organic Search</h3><p>—</p><div class="kpi">قابل اندازه‌گیری پس از راه‌اندازی</div></div>
+<div class="cell"><h3>Qualified Leads</h3><p>—</p><div class="kpi">قابل اندازه‌گیری پس از راه‌اندازی</div></div></div></div></section>
+
+<section class="sand" id="s13" data-t="جمع‌بندی"><span class="n">۱۲</span><div class="wrap rv">
+<h2>ساخت یک سیستم دیجیتال برای رشد تجاری</h2>
+<p class="lead">هدف این برنامه، ایجاد حضوری یکپارچه و قابل توسعه برای کاسپین تجارت پوریا است؛ حضوری که هویت برند، اطلاعات محصول، محتوای تخصصی و مسیر ارتباط با مشتریان تجاری را در یک سیستم مشترک قرار می‌دهد.</p>
+<a class="btn" style="background:var(--green);color:var(--cream)" href="#" id="pr">ذخیره به PDF</a></div></section>
+<footer>کاسپین تجارت پوریا · پروپوزال پیشنهادی</footer>
+
+<script>
+(function(){
+var secs=[].slice.call(document.querySelectorAll('section')),toc=document.getElementById('toc'),tb=document.getElementById('tb');
+secs.forEach(function(s){var a=document.createElement('a');a.href='#'+s.id;a.textContent=s.dataset.t;a.addEventListener('click',function(){toc.classList.remove('open');tb.setAttribute('aria-expanded','false')});toc.appendChild(a)});
+tb.addEventListener('click',function(){var o=toc.classList.toggle('open');tb.setAttribute('aria-expanded',o)});
+var links=toc.querySelectorAll('a'),bar=document.getElementById('bar');
+function upd(){var h=document.documentElement,p=h.scrollTop/(h.scrollHeight-h.clientHeight);bar.style.width=(p*100)+'%';
+var cur=0;secs.forEach(function(s,i){if(s.getBoundingClientRect().top<innerHeight*.4)cur=i});
+links.forEach(function(l,i){l.classList.toggle('on',i===cur)})}
+addEventListener('scroll',upd,{passive:true});upd();
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.1});document.querySelectorAll('.rv').forEach(function(r){io.observe(r)})}else{document.querySelectorAll('.rv').forEach(function(r){r.classList.add('in')})}
+document.getElementById('pr').addEventListener('click',function(e){e.preventDefault();print()});
+})();
+</script>
+</body>
+</html>
